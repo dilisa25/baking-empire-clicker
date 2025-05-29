@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+main {  display: grid;
+  grid-template-columns: 0.7fr 1.0fr 0.5fr;
+  grid-template-rows: 1fr 1fr 0.9fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "map map stats"
+    "map map stats"
+    "goods goods stats";
+}
+
+.goods { grid-area: goods; }
+
+.map { 
+  grid-area: map; 
+  background-image: url("/src/images/map.jpg");
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stats { grid-area: stats; }
