@@ -1,25 +1,45 @@
 @import "tailwindcss";
 
-main {  display: grid;
-  grid-template-columns: 0.7fr 1.0fr 0.5fr;
-  grid-template-rows: 1fr 1fr 0.9fr;
+main{  display: grid;
+  grid-template-columns: 1.2fr 1.5fr 1.1fr;
+  grid-template-rows: 1.1fr 1.1fr 0.45fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
-    "map map stats"
-    "map map stats"
-    "goods goods stats";
+    "stats map map"
+    "stats map map"
+    "stats goods goods";
 }
+
+.map { grid-area: map; }
+
+.stats { grid-area: stats; }
+
+.goods { grid-area: goods; }
+
+
 
 .goods { grid-area: goods; }
 
 .map { 
   grid-area: map; 
   background-image: url("/src/images/map.jpg");
-  background-size: 800px;
+  background-size: 500px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top right;
 }
 
+.goods { 
+  grid-area: goods; 
+  background-image: url("/src/images/bg1.jpg");
+  background-size: 300px;
+
+}
+.stats { 
+  grid-area: goods; 
+  background-image: url("/src/images/bg1.jpg");
+  background-size: 300px;
+
+}
 .stats { grid-area: stats; }
