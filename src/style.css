@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 main{  display: grid;
-  grid-template-columns: 1.2fr 1.5fr 1.1fr;
-  grid-template-rows: 1.1fr 1.1fr 0.45fr;
+  grid-template-columns: 0.6fr 1.5fr 1.1fr;
+  grid-template-rows: 1.1fr 1.1fr .8fr;
   grid-auto-columns: 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
@@ -20,8 +20,6 @@ main{  display: grid;
 
 
 
-.goods { grid-area: goods; }
-
 .map { 
   grid-area: map; 
   background-image: url("/src/images/map.jpg");
@@ -30,16 +28,4 @@ main{  display: grid;
   background-position: top right;
 }
 
-.goods { 
-  grid-area: goods; 
-  background-image: url("/src/images/bg1.jpg");
-  background-size: 300px;
 
-}
-.stats { 
-  grid-area: goods; 
-  background-image: url("/src/images/bg1.jpg");
-  background-size: 300px;
-
-}
-.stats { grid-area: stats; }
