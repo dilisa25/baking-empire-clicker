@@ -22,10 +22,27 @@ main{  display: grid;
 
 .map { 
   grid-area: map; 
-  background-image: url("/src/images/map.jpg");
-  background-size: 500px;
+  background-image: url("/src/images/Neighborhood.jpg");
+  background-size: 1220px;
   background-repeat: no-repeat;
   background-position: top right;
 }
 
+.stats { 
+  grid-area: stats; 
+  background-image: url("/src/images/bg.webp");
+}
+.goods { 
+  grid-area: goods; 
+  background-image: url("/src/images/bg.webp");
+}
 
+.characters {Add commentMore actions
+  grid-area: characters;
+  @apply border-t-amber-400 border-t-2 bg-stone-800/30 flex items-center justify-evenly;
+}
+
+
+.character {
+  @apply cursor-pointer h-32 bg-stone-800 w-72 flex items-center p-4 text-amber-400 text-left;
+ }
