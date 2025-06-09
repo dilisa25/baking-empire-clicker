@@ -8,7 +8,7 @@ points = points + amount
 console.log("points")
 
 
-pointCounter.innerText = points +'Dollars'
+pointCounter.innerText = points.toFixed(2) +'Dollars'
 }
 
 
@@ -34,3 +34,10 @@ function getWorkers() {
   } else {
    alert("You poor")
   }
+ 
+function bigClick() {
+  let basePoint = 1 + (stLevel ** 1.05)
+       
+
+  changePoint(basePoint)
+}
