@@ -4,59 +4,78 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="/src/style.css">
-    <title>Vite App</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <title>My Baking Empire</title>
   </head>
   <body>
-    <script type="module" src="/src/main.js"></script>
-    <main class="w-screen h-screen">
-      <header class="absolute top-0 left-0 text-3xl border-black border-b-2 border-r-2 px-2 pt-1 inline-block bg-pink-200">
+    <header class="absolute top-0 left-0 bg-pink-200 border-b-4 border-pink-400 border-r-4 shadow-md px-4 py-2 z-50 rounded-br-2xl text-3xl font-bold text-gray-800 ">
         My Baking Empire
       </header>
-  
-      <div class=" map bg-[#b3e3f9] flex items-center">
-        <button class="cursor-pointer clicker active:-translate-y-7 transition-transform " onclick="changePoint(1)">
-          <img src="/src/images/girl.png" width="540" >
-        </button>
-       </div>
+      <h1 class="absolute top-0 right-0 bg-pink-200 border-b-4 border-pink-400 border-l-4 shadow-md px-4 py-2 z-50 rounded-bl-2xl text-3xl font-bold text-gray-800">
+     0000000 Dollars
+      </h1>
+    <main class="w-screen h-screen">
       
-       <div class="stats bg-pink-200"></div>
 
+      <div class="map bg-[#b3e3f9] flex justify-center items-center">
+      
+       
+     <button
+      class="cursor-pointer clicker active:-translate-y-7 transition-transform "
+      onclick="changePoint(1)"
+      >
+      <img src="/src/images/girl.png" width="500" />
+      </button>
+      </div>
 
-      <div class="goods" bg-purple-200">
+  <div class="stats bg-pink-200 p-4 flex flex-col items-center gap-6 mt-13">
+    
+    <div class="text-center">
+     <img src="/src/images/Neighborhood.jpg" width="200" />
+     <p class="mt-2 font-semibold">Level 1:Neighborhood Baker</p>
+    </div>
 
-        <button onclick ="bigClick()" class= good">
-          <img src="/src/images/">
+   <div class="text-center">
+    <img src="/src/images/bakery.jpg" width="200" />
+    <p class="mt-2 font-semibold">Level 2: First bakery</p>
+   </div>
 
-          <div>
-            <h2>Baking Kit</h2>
-            <p>Level 00</p>
-            <p>Cost: $50 </p>
+  <div class="text-center">
+    <img src="/src/images/city.jpg" width="200" />
+    <p class="mt-2 font-semibold">Level 3 : Baking Empire</p>
+    </div>
+   </div>
+
+      <div class="goods bg-pink-200 flex flex-row items-start gap-4 p-4">
+        <button onclick="bigClick()" class="good">
+          <img src="/src/images/baking kit.png" class="w-20 h-20" />
+          <div class="flex flex-col">
+            <h2 class="text-base font-semibold">Baking Kit</h2>
+            <p class="text-sm">Level 00</p>
+            <p class="text-sm">Cost: $50</p>
           </div>
         </button>
-     
+
         <button class="good">
-          <img src="/src/images/">
-
-          <div>
-            <h2>Mixer</h2>
-            <p>Level 00</p>
-            <p>Cost: $100 </p>
+          <img src="/src/images/mixer.png" class="w-20 h-20 " />
+          <div class="flex flex-col">
+            <h2 class="text-base font-semibold">Mixer</h2>
+            <p class="text-sm">Level 00</p>
+            <p class="text-sm">Cost: $1000</p>
           </div>
         </button>
+
         <button class="good">
-          <img src="/src/images/">
-
-          <div>
-            <h2>Worker</h2>
-            <p>Level 00</p>
-            <p>Cost: $100 </p>
+          <img src="/src/images/worker.png" class="w-20 h-20 " />
+          <div class="flex flex-col">
+            <h2 class="text-base font-semibold">Worker</h2>
+            <p class="text-sm">Level 00</p>
+            <p class="text-sm">Cost: $1000</p>
           </div>
         </button>
+      </div>
     </main>
 
-    <script src = "/src/main.js"></script>
+    <script type="module" src="/src/main.js"></script>
   </body>
-  
 </html>
